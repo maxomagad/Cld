@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/MontserratLight.woff2") format("woff2"),
-    url("../fonts/MontserratLight.woff") format("woff");
+  src: url("fonts/MontserratLight.woff2") format("woff2"),
+    url("fonts/MontserratLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/MontserratRegular.woff2") format("woff2"),
-    url("../fonts/MontserratRegular.woff") format("woff");
+  src: url("fonts/MontserratRegular.woff2") format("woff2"),
+    url("fonts/MontserratRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/MontserratMedium.woff2") format("woff2"),
-    url("../fonts/MontserratMedium.woff") format("woff");
+  src: url("fonts/MontserratMedium.woff2") format("woff2"),
+    url("fonts/MontserratMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/MontserratSemiBold.woff2") format("woff2"),
-    url("../fonts/MontserratSemiBold.woff") format("woff");
+  src: url("fonts/MontserratSemiBold.woff2") format("woff2"),
+    url("fonts/MontserratSemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/MontserratBold.woff2") format("woff2"),
-    url("../fonts/MontserratBold.woff") format("woff");
+  src: url("fonts/MontserratBold.woff2") format("woff2"),
+    url("fonts/MontserratBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -194,7 +194,7 @@ p {
   margin-bottom: 50px;
   padding: 100px 80px;
   border-radius: 32px;
-  background: url(../img/body/hero/img-1.jpg);
+  background: url(img/body/hero/img-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -283,7 +283,7 @@ p {
   width: 870px;
   height: 620px;
   border-radius: 32px;
-  background-image: url(../img/body/about/img-1.png);
+  background-image: url(img/body/about/img-1.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -353,11 +353,11 @@ p {
 
 .about__container__right .box-1 {
   margin-bottom: 30px;
-  background-image: url(../img/body/about/icon-1.svg);
+  background-image: url(img/body/about/icon-1.svg);
 }
 
 .about__container__right .box-2 {
-  background-image: url(../img/body/about/icon-2.svg);
+  background-image: url(img/body/about/icon-2.svg);
 }
 
 /* Stages */
@@ -389,7 +389,7 @@ p {
   position: relative;
   width: 100%;
   height: 470px;
-  background-image: url(../img/body/work/img-1.jpg);
+  background-image: url(img/body/work/img-1.jpg);
   background-repeat: no-repeat;
   background-size: 870px 460px;
   background-position: bottom right;
@@ -470,7 +470,7 @@ p {
 .questions__item .questions-btn {
   width: 50px;
   height: 50px;
-  background-image: url(../img/body/questions/icon-btn.svg);
+  background-image: url(img/body/questions/icon-btn.svg);
   background-position: center;
   display: inline-block;
   position: absolute;
