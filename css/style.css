@@ -155,32 +155,50 @@ p {
 
 .header-link:hover {
   outline: none;
-  border-bottom: 3px solid #FF9900;
+  border-bottom: 2px solid #FF9900;
   color: black;
 }
 
 .header-link:active {
-  border-bottom: 3px solid #E1670E;
+  border-bottom: 2px solid #E1670E;
   color: #E1670E;
   outline: none;
 }
 
-.header-link .icon-search {
+.search-link {
+  height: 26px;
+  width: 24px;
+}
+
+.header .icon-search rect {
+  fill: black;
+}
+
+.header .icon-search path {
   stroke: black;
 }
 
-.header .icon-search:focus {
-  outline: 2px solid #FF9900;
-  outline-offset: 5px;
-  stroke: black;
-}
-
-.header .icon-search:hover {
+.header .search-link:hover rect {
+  fill: #FF9900;
   outline: none;
-  stroke: #FF9900;
 }
 
-.header .icon-search:active {
+.header .search-link:hover path {
+  stroke: #FF9900;
+  outline: none;
+}
+
+.header .search-link:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 4px;
+}
+
+.header .search-link:active rect {
+  fill: #FF9900;
+  outline: none;
+}
+
+.header .search-link:active path {
   stroke: #FF9900;
   outline: none;
 }
@@ -227,6 +245,21 @@ p {
   color: white;
   background-color: var(--orange);
   border-radius: 16px;
+}
+
+.btn:hover {
+  background-color: #FFB84D;
+  outline: none;
+}
+
+.btn:focus {
+  background-color: #FFB84D;
+  outline: none;
+}
+
+.btn:active {
+  background-color: #E1670E;
+  outline: none;
 }
 
 .hero__icon__container {
@@ -315,8 +348,23 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  border: 3px solid #FF9900;
+  outline: 3px solid #FF9900;
   background-color: transparent;
+}
+
+.about__container__left__container .box .btn:hover {
+  background-color: #FF9900;
+  outline: none;
+}
+
+.about__container__left__container .box .btn:focus {
+  background-color: #FF9900;
+  outline: none;
+}
+
+.about__container__left__container .box .btn:active {
+  background-color: #E1670E;
+  outline: none;
 }
 
 .about__container__right {
@@ -381,6 +429,22 @@ p {
   color: black;
 }
 
+.stages__item .stages-btn:hover {
+  color: #FF9900;
+  outline: none;
+}
+
+.stages__item .stages-btn:focus {
+  color: black;
+  outline: 2px solid #FF9900;
+  outline-offset: 3px;
+}
+
+.stages__item .stages-btn:active {
+  color: #E1670E;
+  outline: none;
+}
+
 .stages__item:not(:last-child) {
   margin-right: 85px;
 }
@@ -427,7 +491,6 @@ p {
 }
 
 .stages__container .btn-2 {
-  padding: 19px 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -435,6 +498,24 @@ p {
   outline: 1px solid #000000;
   background-color: transparent;
   left: 210px;
+}
+
+.stages__container .btn-2:hover {
+  background-color: #666666;
+  color: white;
+  outline: none;
+}
+
+.stages__container .btn-2:focus {
+  background-color: #666666;
+  color: white;
+  outline: none;
+}
+
+.stages__container .btn-2:active {
+  background-color: black;
+  color: white;
+  outline: none;
 }
 
 /* Questions */
