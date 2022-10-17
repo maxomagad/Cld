@@ -147,6 +147,10 @@ p {
   margin-right: 85px;
 }
 
+.header-item__link {
+  transition: color 0.2s ease-in-out;
+}
+
 .header-item__link:focus {
   outline: 2px solid #FF9900;
   outline-offset: 5px;
@@ -172,10 +176,12 @@ p {
 
 .header .seacrh-icon rect {
   fill: black;
+  transition: fill 0.3s ease-in-out;
 }
 
 .header .seacrh-icon path {
   stroke: black;
+  transition: stroke 0.3s ease-in-out;
 }
 
 .header .search-link:hover rect {
@@ -245,6 +251,7 @@ p {
   color: white;
   background-color: var(--orange);
   border-radius: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, outline 0.3s ease-in-out ;
 }
 
 .btn:hover {
@@ -418,25 +425,26 @@ p {
   margin-bottom: 45px;
 }
 
-.stages-list__item .stages-list__btn {
+.stages-list__btn {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: black;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, outline 0.3s ease-in-out ;
 }
 
-.stages-list__item .stages-list__btn:hover {
+.stages-list__btn:hover {
   color: #FF9900;
   outline: none;
 }
 
-.stages-list__item .stages-list__btn:focus {
+.stages-list__btn:focus {
   color: black;
   outline: 2px solid #FF9900;
   outline-offset: 3px;
 }
 
-.stages-list__item .stages-list__btn:active {
+.stages-list__btn:active {
   color: #E1670E;
   outline: none;
 }
@@ -526,9 +534,11 @@ p {
 
 .questions-list__item {
   position: relative;
+  cursor: pointer;
   width: 100%;
   height: 110px;
   border-top: 1px solid #CACACA;
+  transition: color 0.1s ease-in-out, border-bottom 0.1s ease-in-out, border-top 0.1s ease-in-out, outline 0.1s ease-in-out ;
 }
 
 .questions-list__item:last-child {
@@ -572,6 +582,7 @@ p {
   position: absolute;
   right: 0;
   top: 30px;
+  transition: background-image 0.1s ease-in-out;
 }
 
 .questions-list__item:hover .questions-list__btn {
@@ -606,6 +617,10 @@ p {
   font-size: 18px;
   line-height: 36px;
   color: #cacaca;
+}
+
+.footer-container-1 .link {
+  transition: color 0.2s ease-in-out;
 }
 
 .footer-container-1 .link:hover {
@@ -677,6 +692,7 @@ p {
   font-size: 16px;
   line-height: 32px;
   color: #cacaca;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .input-email:hover {
@@ -706,6 +722,7 @@ p {
   line-height: 20px;
   color: #cacaca;
   resize: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .input-message:hover {
@@ -768,6 +785,7 @@ p {
   bottom: 50px;
   height: 60px;
   fill: #666666;
+  transition: fill 0.3s ease-in-out;
 }
 
 .icon-link-ok:hover {
@@ -792,6 +810,7 @@ p {
   bottom: 50px;
   height: 60px;
   fill: #666666;
+  transition: fill 0.3s ease-in-out;
 }
 
 .icon-link-vk:hover {
