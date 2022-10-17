@@ -11,29 +11,29 @@
 
 <body>
   <header class="header flex">
-    <a href="#" class="icon-logo"><img src="img/general/logo.svg" alt="..."></a>
-    <ul class="header__list list-reset flex">
-      <li class="header__item">
-        <a class="header-link" href="#about">О нас</a>
+    <a href="#"><img src="img/general/logo.svg" alt="..."></a>
+    <ul class="header-list list-reset flex">
+      <li class="header-item">
+        <a class="header-item__link" href="#about">О нас</a>
       </li>
-      <li class="header__item">
-        <a class="header-link" href="#">Проекты</a>
+      <li class="header-item">
+        <a class="header-item__link" href="#">Проекты</a>
       </li>
-      <li class="header__item">
-        <a class="header-link" href="#stages">Этапы</a>
+      <li class="header-item">
+        <a class="header-item__link" href="#stages">Этапы</a>
       </li>
-      <li class="header__item">
-        <a class="header-link" href="#">Отзывы</a>
+      <li class="header-item">
+        <a class="header-item__link" href="#">Отзывы</a>
       </li>
-      <li class="header__item">
-        <a class="header-link" href="#">Контакты</a>
+      <li class="header-item">
+        <a class="header-item__link" href="#">Контакты</a>
       </li>
     </ul>
-    <a class="search-link" href="#"><svg class="icon-search" fill="none" width="24" height="24" viewbox="0 0 24 24"
+    <a class="search-link" href="#"><svg class="seacrh-icon" fill="none" width="24" height="24" viewbox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg">
-        <rect class="icon-search" width="7.56126" height="1.89031"
+        <rect class="seacrh-icon" width="7.56126" height="1.89031"
           transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" />
-        <path class="icon-search"
+        <path class="seacrh-icon"
           d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
           stroke-width="2" />
       </svg>
@@ -41,12 +41,12 @@
   </header>
 
   <main class="main">
-    <section class="container hero__container" id="hero">
+    <section class="hero-container" id="hero">
       <h1 class="title">Проектные решения любой сложности</h1>
       <p class="descr">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день
         остаются уделом проектантов</p>
       <button onclick="window.location.href = '#footer'" class="btn btn-reset">Заказать расчёт</button>
-      <div class="hero__icon__container">
+      <div class="control-container">
         <svg width="15" height="15" view-box="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
           <circle cx="7.5" cy="7.5" r="7.5" fill="white" />
         </svg>
@@ -61,7 +61,7 @@
 
     <section class="about" id="about">
       <h2 class="section-title">О нас</h2>
-      <p class="section-descr">Также как перспективное планирование создаёт необходимость включения
+      <p class="descr">Также как перспективное планирование создаёт необходимость включения
         в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов,
         поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны
         максимально подробно. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов
@@ -69,24 +69,22 @@
         отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций,
         занимаемых участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что
         высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-      <div class="about__container flex">
-        <div class="about__container__left">
-          <div class="about__container__left__container">
-            <div class="box flex">
-              <span class="descr">Принимая во&nbsp;внимание показатели успешности, перспективное планирование
-                способствует
-                подготовке и&nbsp;реализации новых принципов</span>
-              <button class="btn btn-reset">Подробнее</button>
-            </div>
+      <div class="about-container flex">
+        <div class="about-container__left">
+          <div class="about-container__left__content flex">
+            <span class="descr">Принимая во&nbsp;внимание показатели успешности, перспективное планирование
+              способствует
+              подготовке и&nbsp;реализации новых принципов</span>
+            <button class="btn btn-reset">Подробнее</button>
           </div>
         </div>
-        <div class="about__container__right flex">
-          <div class="box box-1">
+        <div class="about-container__right flex">
+          <div class="about-card about-card-1">
             <p class="title">Консультация с&nbsp;широким активом</p>
             <p class="descr">А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые
               горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений</p>
           </div>
-          <div class="box box-2">
+          <div class="about-card about-card-2">
             <p class="title">В&nbsp;своём стремлении повысить</p>
             <p class="descr">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой
               интересный эксперимент проверки прогресса профессионального сообщества</p>
@@ -97,21 +95,21 @@
 
     <section class="stages" id="stages">
       <h2 class="section-title">Как мы работаем</h2>
-      <ul class="stages__list list-reset flex">
-        <li class="stages__item">
-          <button class="stages-btn btn-reset">1 шаг</button>
+      <ul class="stages-list list-reset flex">
+        <li class="stages-list__item">
+          <button class="stages-list__btn btn-reset">1 шаг</button>
         </li>
-        <li class="stages__item">
-          <button class="stages-btn btn-reset">2 шаг</button>
+        <li class="stages-list__item">
+          <button class="stages-list__btn btn-reset">2 шаг</button>
         </li>
-        <li class="stages__item">
-          <button class="stages-btn btn-reset">3 шаг</button>
+        <li class="stages-list__item">
+          <button class="stages-list__btn btn-reset">3 шаг</button>
         </li>
-        <li class="stages__item">
-          <button class="stages-btn btn-reset">4 шаг</button>
+        <li class="stages-list__item">
+          <button class="stages-list__btn btn-reset">4 шаг</button>
         </li>
       </ul>
-      <div class="stages__container">
+      <div class="stages-container">
         <p class="title">Проводим консультацию</p>
         <p class="descr">Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
           В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
@@ -128,27 +126,27 @@
 
     <section class="questions" id="questions">
       <h2 class="section-title">Часто задаваемые вопросы</h2>
-      <ul class="questions__list list-reset">
-        <li class="questions__item">
+      <ul class="questions-list list-reset">
+        <li class="questions-list__item">
           <p class="title">Из&nbsp;чего формируется конечная стоимость проекта?</p>
-          <button class="questions-btn btn-reset"></button>
+          <button class="questions-list__btn btn-reset"></button>
         </li>
-        <li class="questions__item">
+        <li class="questions-list__item">
           <p class="title">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?</p>
-          <button class="questions-btn btn-reset"></button>
+          <button class="questions-list__btn btn-reset"></button>
         </li>
-        <li class="questions__item">
+        <li class="questions-list__item">
           <p class="title">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</p>
-          <button class="questions-btn btn-reset"></button>
+          <button class="questions-list__btn btn-reset"></button>
         </li>
-        <li class="questions__item">
+        <li class="questions-list__item">
           <p class="title">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование с&nbsp;подрядчиком&nbsp;/
             организацией?</p>
-          <button class="questions-btn btn-reset"></button>
+          <button class="questions-list__btn btn-reset"></button>
         </li>
-        <li class="questions__item">
+        <li class="questions-list__item">
           <p class="title">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</p>
-          <button class="questions-btn btn-reset"></button>
+          <button class="questions-list__btn btn-reset"></button>
         </li>
       </ul>
     </section>
@@ -156,32 +154,32 @@
 
   <footer>
     <div class="footer flex" id="footer">
-      <div class="footer__container footer-container-1">
+      <div class="footer-container-1">
         <a href="#"><img src="img/footer/logo.svg" alt="..."></a>
-        <ul class="footer__container__list list-reset">
-          <li class="footer__container__item"><a href="#" class="link">О нас</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Проекты</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Отзывы</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Договор оферты</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Договор подряда</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Конфидециальность</a></li>
-          <li class="footer__container__item"><a href="#" class="link">Партнёрское соглашение</a></li>
+        <ul class="list-reset">
+          <li><a href="#" class="link">О нас</a></li>
+          <li><a href="#" class="link">Проекты</a></li>
+          <li><a href="#" class="link">Отзывы</a></li>
+          <li><a href="#" class="link">Договор оферты</a></li>
+          <li><a href="#" class="link">Договор подряда</a></li>
+          <li><a href="#" class="link">Конфидециальность</a></li>
+          <li><a href="#" class="link">Партнёрское соглашение</a></li>
         </ul>
       </div>
-      <div class="footer__container footer-container-2">
-        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <div class="footer-container-2">
+        <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <p class="title">Оставить заявку</p>
           <input class="input-name" type="text" required placeholder="Фамилия, имя и отчество*">
           <input class="input-email" type="email" required placeholder="Email*">
           <textarea class="input-message" placeholder="Сообщение"></textarea>
           <button class="btn btn-reset">Отправить данные</button>
-          <div class="checkbox flex">
-            <input class="input-checkbox" type="checkbox" required>
+          <div class="footer-checkbox flex">
+            <input class="checkbox-input" type="checkbox" required>
             <span class="checkbox-descr">Согласен на&nbsp;обработку данных</span>
           </div>
         </form>
       </div>
-      <div class="footer__container footer-container-3">
+      <div class="footer-container-3">
         <p class="descr">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством
           простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
           развития. Таким образом, консультация
