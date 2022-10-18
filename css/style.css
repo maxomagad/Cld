@@ -60,22 +60,23 @@ html {
 }
 
 body {
-  min-width: 1920px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0;
   background-color: #FFFFFF;
 }
 
+.main {
+  max-width: 1920px;
+  padding: 0 75px;
+  margin: auto;
+}
+
 footer {
-  min-width: 1920px;
+  width: 100%;
   height: 600px;
   margin: auto;
   background-color: black;
-}
-
-.main {
-  width: 1920px;
-  padding: 0 75px;
-  margin: auto;
 }
 
 a {
@@ -130,9 +131,13 @@ p {
   align-items: center;
 }
 
+.heaeder-logo {
+  margin-right: 20px;
+}
+
 .header-list {
   margin-left: auto;
-  margin-right: 250px;
+  margin-right: auto;
   flex-direction: row;
 }
 
@@ -224,7 +229,7 @@ p {
 }
 
 .hero-container .title {
-  width: 840px;
+  max-width: 840px;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -236,7 +241,7 @@ p {
 
 .hero-container .descr {
   margin-bottom: 90px;
-  width: 800px;
+  max-width: 800px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -300,7 +305,7 @@ p {
 }
 
 .about .about-descr {
-  width: 1235px;
+  max-width: 1235px;
   margin-bottom: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -309,14 +314,18 @@ p {
 }
 
 .about-container {
+  flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 100px;
 }
 
 .about-container__left {
-  margin-right: 34px;
+  margin-right: 32px;
+  margin-bottom: 34px;
   position: relative;
-  width: 870px;
+  width: 50%;
+  min-width: 740px;
+  max-width: 860px;
   height: 620px;
   border-radius: 32px;
   background-image: url(../img/body/about/img-1.png);
@@ -372,12 +381,14 @@ p {
 
 .about-container__right {
   flex-direction: column;
+  width: 50%;
+  min-width: 740px;
+  max-width: 860px;
 }
 
 .about-container__right .about-card {
-  width: 870px;
   height: 295px;
-  padding: 65px 110px;
+  padding: 65px 90px;
   padding-left: 300px;
   border: 1px solid #CACACA;
   border-radius: 32px;
@@ -601,7 +612,7 @@ p {
 
 .footer {
   position: relative;
-  width: 1920px;
+  max-width: 1920px;
   height: 100%;
   margin: auto;
   padding: 50px 75px;
