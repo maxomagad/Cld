@@ -13,21 +13,11 @@
   <header class="header flex">
     <a class="heaeder-logo" href="#"><img src="img/general/logo.svg" alt="..."></a>
     <ul class="header-list list-reset flex">
-      <li class="header-item">
-        <a class="header-item__link" href="#about">О нас</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item__link" href="#">Проекты</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item__link" href="#stages">Этапы</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item__link" href="#">Отзывы</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item__link" href="#">Контакты</a>
-      </li>
+      <li class="header-item"><a class="header-item__link" href="#about">О нас</a></li>
+      <li class="header-item"><a class="header-item__link" href="#">Проекты</a></li>
+      <li class="header-item"><a class="header-item__link" href="#stages">Этапы</a></li>
+      <li class="header-item"><a class="header-item__link" href="#">Отзывы</a></li>
+      <li class="header-item"><a class="header-item__link" href="#">Контакты</a></li>
     </ul>
     <a class="search-link" href="#"><svg class="seacrh-icon" fill="none" width="24" height="24" viewbox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg">
@@ -169,13 +159,13 @@
       <div class="footer-container-2">
         <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <p class="title">Оставить заявку</p>
-          <input class="input-name" type="text" maxlength="99" required placeholder="Фамилия, имя и отчество*">
-          <input class="input-email" type="email" maxlength="99" required placeholder="Email*">
-          <textarea class="input-message" maxlength="999" placeholder="Сообщение"></textarea>
+          <input class="input-name" type="text" name="name" maxlength="99" required placeholder="Фамилия, имя и отчество*">
+          <input class="input-email" type="email" name="email" maxlength="99" required placeholder="Email*">
+          <textarea class="input-message" name="message" maxlength="999" placeholder="Сообщение"></textarea>
           <button class="btn btn-reset">Отправить данные</button>
           <div class="footer-checkbox flex">
-            <input class="checkbox-input" type="checkbox" required>
-            <span class="checkbox-descr">Согласен на&nbsp;обработку данных</span>
+            <input class="checkbox-input" id="checkbox" type="checkbox" required>
+            <label for="checkbox">Согласен на&nbsp;обработку данных</label>
           </div>
         </form>
       </div>
