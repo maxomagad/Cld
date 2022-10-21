@@ -130,9 +130,13 @@ p {
   align-items: center;
 }
 
+.heaeder-logo {
+  margin-right: 20px;
+}
+
 .header-list {
   margin-left: auto;
-  margin-right: 250px;
+  margin-right: auto;
   flex-direction: row;
 }
 
@@ -298,7 +302,7 @@ p {
 }
 
 .about .about-descr {
-  width: 1235px;
+  max-width: 1235px;
   margin-bottom: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -307,6 +311,7 @@ p {
 }
 
 .about-container {
+  flex-wrap: wrap;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
