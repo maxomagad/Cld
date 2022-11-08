@@ -61,6 +61,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   margin: 0;
   background-color: #FFFFFF;
 }
@@ -134,10 +135,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
 
-.header .burger {
-  display: none;
 }
 
 .header-list {
@@ -222,21 +220,19 @@ p {
 .hero-container {
   position: relative;
   width: 100%;
-  height: 620px;
   margin-bottom: 50px;
   padding: 100px 80px;
+  padding-bottom: 70px;
   border-radius: 32px;
-  background: url(../img/body/hero/img-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../img/body/hero/hero-img-1920-1.jpg);
   background-size: cover;
 }
 
 .hero-container .title {
-  width: 840px;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+  max-width: 850px;
   font-weight: 800;
   font-size: 70px;
   line-height: 85px;
@@ -349,7 +345,7 @@ p {
 }
 
 .about-container__left__content .descr {
-  width: 435px;
+  margin-right: 5px;
   min-height: 100px;
   font-weight: 700;
   font-size: 16px;
@@ -439,6 +435,8 @@ p {
 
 .stages-list {
   margin-bottom: 45px;
+  justify-content: space-between;
+  max-width: 460px;
 }
 
 .stages-list__btn {
@@ -465,24 +463,22 @@ p {
   outline: none;
 }
 
-.stages-list__item:not(:last-child) {
-  margin-right: 85px;
-}
-
 .stages-container {
   position: relative;
   width: 100%;
   min-height: 470px;
 }
 
-.stages-container .picture {
-  width: calc(100% - (50% + 15px));
-  height: 98%;
+.stages-img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  width: 49%;
+  height: 100%;
+  background-image: url(../img/body/work/img-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 32px;
-  object-fit: cover;
 }
 
 .stages-container .title {
@@ -509,7 +505,7 @@ p {
 }
 
 .stages-container .btn-1 {
-  margin-right: 26px;
+  margin-right: 22px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -557,7 +553,10 @@ p {
   position: relative;
   cursor: pointer;
   width: 100%;
+  padding: 35px 0;
   min-height: 110px;
+  align-items: center;
+  justify-content: space-between;
   border-top: 1px solid #CACACA;
   transition: color 0.1s ease-in-out, border-bottom 0.1s ease-in-out, border-top 0.1s ease-in-out, outline 0.1s ease-in-out;
 }
@@ -587,9 +586,7 @@ p {
 
 .questions-list__item .title {
   display: inline-block;
-  padding-right: 70px;
-  margin-top: 38px;
-  margin-bottom: 38px;
+  width: 85%;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -597,27 +594,61 @@ p {
 }
 
 .questions-list__item .questions-list__btn {
+  display: inline;
+  position: relative;
   width: 50px;
   height: 50px;
-  background-image: url(../img/body/questions/icon-btn.svg);
-  background-position: center;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  transition: background-image 0.1s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #CACACA;
 }
 
 .questions-list__item:hover .questions-list__btn {
-  background-image: url(../img/body/questions/icon__btn-hover-and-focus.svg);
+  background-color: #FF9900;
 }
 
 .questions-list__item:focus .questions-list__btn {
-  background-image: url(../img/body/questions/icon__btn-hover-and-focus.svg);
+  background-color: #FF9900;
 }
 
 .questions-list__item:active .questions-list__btn {
-  background-image: url(../img/body/questions/icon__btn-active.svg);
+  background-color: #CACACA;
+}
+
+.questions-list__btn:focus {
+  border: none;
+  outline: none;
+}
+
+.btn__line {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+  background-color: black;
+  transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn__line-2 {
+  transform: rotate(90deg);
+  left: 20%;
+}
+
+.questions-list__item:hover .btn__line {
+  background-color: white;
+}
+
+.questions-list__item:focus .btn__line {
+  background-color: white;
+}
+
+.questions-list__item:active .btn__line {
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.questions-list__item:active .btn__line-2 {
+  transform: rotate(-45deg);
 }
 
 /* Footer */
@@ -764,8 +795,8 @@ p {
 }
 
 .footer-form .btn {
-  max-width: 270px;
-  margin-right: 22px;
+  max-width: 265px;
+  margin-right: 5px;
   padding: 18px 50px;
   font-weight: 700;
   font-size: 16px;
@@ -786,6 +817,7 @@ label {
 
 .checkbox-input {
   position: absolute;
+  margin-top: 10px;
   opacity: 0;
 }
 
