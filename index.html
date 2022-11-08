@@ -7,27 +7,35 @@
   <title>Евклид</title>
   <link rel="icon" href="img/general/favicon.svg">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
   <header class="header flex">
-    <a class="heaeder-logo" href="#"><img src="img/general/logo.svg" alt="..."></a>
-    <ul class="header-list list-reset flex">
-      <li class="header-item"><a class="header-item__link" href="#about">О нас</a></li>
-      <li class="header-item"><a class="header-item__link" href="#">Проекты</a></li>
-      <li class="header-item"><a class="header-item__link" href="#stages">Этапы</a></li>
-      <li class="header-item"><a class="header-item__link" href="#">Отзывы</a></li>
-      <li class="header-item"><a class="header-item__link" href="#">Контакты</a></li>
-    </ul>
-    <a class="search-link" href="#"><svg class="seacrh-icon" fill="none" width="24" height="24" viewbox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect class="seacrh-icon" width="7.56126" height="1.89031"
-          transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" />
-        <path class="seacrh-icon"
-          d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-          stroke-width="2" />
-      </svg>
-    </a>
+    <div class="container flex">
+      <a href="#" class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </a>
+      <a class="header-logo" href="#"><img class="img" src="img/general/logo.svg" alt="..."></a>
+      <ul class="header-list list-reset flex">
+        <li class="header-item"><a class="header-item__link" href="#about">О нас</a></li>
+        <li class="header-item"><a class="header-item__link" href="#">Проекты</a></li>
+        <li class="header-item"><a class="header-item__link" href="#stages">Этапы</a></li>
+        <li class="header-item"><a class="header-item__link" href="#">Отзывы</a></li>
+        <li class="header-item"><a class="header-item__link" href="#">Контакты</a></li>
+      </ul>
+      <a class="search-link" href="#"><svg class="seacrh-icon" fill="none" width="24" height="24" viewbox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect class="seacrh-icon" width="7.56126" height="1.89031"
+            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" />
+          <path class="seacrh-icon"
+            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+            stroke-width="2" />
+        </svg>
+      </a>
+    </div>
   </header>
 
   <main class="main">
@@ -100,11 +108,12 @@
         </li>
       </ul>
       <div class="stages-container">
+        <div class="stages-img"></div>
         <p class="title">Проводим консультацию</p>
         <p class="descr">Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
           В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-          объективно рассмотрены соответствующими инстанциями.<br>
-          А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически,
+          объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных
+          резервов, инициированные исключительно синтетически,
           ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
           с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
           Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
@@ -117,26 +126,41 @@
     <section class="questions" id="questions">
       <h2 class="section-title">Часто задаваемые вопросы</h2>
       <ul class="questions-list list-reset">
-        <li class="questions-list__item" tabindex="0">
+        <li class="questions-list__item flex" tabindex="0">
           <p class="title">Из&nbsp;чего формируется конечная стоимость проекта?</p>
-          <button class="questions-list__btn btn-reset" tabindex="1"></button>
+          <button class="questions-list__btn btn-reset" tabindex="1">
+            <span class="btn__line"></span>
+            <span class="btn__line btn__line-2"></span>
+          </button>
         </li>
-        <li class="questions-list__item" tabindex="0">
+        <li class="questions-list__item flex" tabindex="0">
           <p class="title">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?</p>
-          <button class="questions-list__btn btn-reset" tabindex="1"></button>
+          <button class="questions-list__btn btn-reset" tabindex="1">
+            <span class="btn__line"></span>
+            <span class="btn__line btn__line-2"></span>
+          </button>
         </li>
-        <li class="questions-list__item" tabindex="0">
+        <li class="questions-list__item flex" tabindex="0">
           <p class="title">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</p>
-          <button class="questions-list__btn btn-reset" tabindex="1"></button>
+          <button class="questions-list__btn btn-reset" tabindex="1">
+            <span class="btn__line"></span>
+            <span class="btn__line btn__line-2"></span>
+          </button>
         </li>
-        <li class="questions-list__item" tabindex="0">
+        <li class="questions-list__item flex" tabindex="0">
           <p class="title">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование с&nbsp;подрядчиком&nbsp;/
             организацией?</p>
-          <button class="questions-list__btn btn-reset" tabindex="1"></button>
+          <button class="questions-list__btn btn-reset" tabindex="1">
+            <span class="btn__line"></span>
+            <span class="btn__line btn__line-2"></span>
+          </button>
         </li>
-        <li class="questions-list__item" tabindex="0">
+        <li class="questions-list__item flex" tabindex="0">
           <p class="title">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</p>
-          <button class="questions-list__btn btn-reset" tabindex="1"></button>
+          <button class="questions-list__btn btn-reset" tabindex="1">
+            <span class="btn__line"></span>
+            <span class="btn__line btn__line-2"></span>
+          </button>
         </li>
       </ul>
     </section>
@@ -145,7 +169,7 @@
   <footer>
     <div class="footer flex" id="footer">
       <div class="footer-container-1">
-        <a href="#"><img src="img/footer/logo.svg" alt="..."></a>
+        <a class="footer-logo" href="#"><img src="img/footer/logo.svg" alt="..."></a>
         <ul class="list-reset">
           <li><a href="#" class="link">О нас</a></li>
           <li><a href="#" class="link">Проекты</a></li>
@@ -159,7 +183,8 @@
       <div class="footer-container-2">
         <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <p class="title">Оставить заявку</p>
-          <input class="input-name" type="text" name="name" maxlength="99" required placeholder="Фамилия, имя и отчество*">
+          <input class="input-name" type="text" name="name" maxlength="99" required
+            placeholder="Фамилия, имя и отчество*">
           <input class="input-email" type="email" name="email" maxlength="99" required placeholder="Email*">
           <textarea class="input-message" name="message" maxlength="999" placeholder="Сообщение"></textarea>
           <button class="btn btn-reset">Отправить данные</button>
