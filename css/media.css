@@ -469,6 +469,10 @@
     margin-bottom: 60px;
   }
 
+  .stages-img {
+    max-height: 300px;
+  }
+
   .questions .section-title {
     margin-bottom: 15px;
   }
@@ -553,13 +557,15 @@
   }
 
   .footer-container-1 {
-    position: absolute;
-    width: calc(100% - 30px);
-    margin: 0;
+    display: none;
   }
 
-  .footer-logo {
-    bottom: 70px;
+  .footer-logo-320 {
+    position: absolute;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    bottom: 80px;
     left: calc(100% - (50% + 65px));
   }
 
