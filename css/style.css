@@ -904,3 +904,7 @@ label {
   fill: #E1670E;
   outline: none;
 }
+
+.footer-logo-320 {
+  display: none;
+}
